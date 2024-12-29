@@ -4,7 +4,7 @@ document.getElementById('nav-placeholder').innerHTML = `
             <li><a href="index.html">Home</a></li>
             <li><a href="Quiz.html" id="quiz-link">Quiz</a></li>
             <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            
         </ul>
     </nav>
 `;
@@ -30,12 +30,14 @@ quizBtn.onclick = function() {
 };
 
 document.getElementById('title-link').innerHTML = `
- <a id="title-link" href="index.html"><h1 class="title">Quiz Mania</h1></a>
+ <a id="title-link" href="./index.html"><h1 class="title">Quiz Mania</h1></a>
     
 `;
 document.getElementById('log-in').innerHTML = `
     <button id="login-btn" onclick=login()>Log In</button>
             `;
+
+const loginDialog = document.getElementById('login-dialog');
 
 function login() {
     const dialog = document.querySelector('dialog');
@@ -50,3 +52,4 @@ function closeDialog() {
     const dialog = document.querySelector('dialog');
     dialog.close();
 }
+
